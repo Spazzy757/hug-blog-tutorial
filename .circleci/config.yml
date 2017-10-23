@@ -4,6 +4,6 @@ jobs:
      docker:
        - image: circleci/python:3.6
      steps:
-       - run: pip install -r requirements
+       - run: pip install -r requirements.txt
        - run: flake8 hello_world.py directive_example.py
        - run: python test.py
