@@ -1,6 +1,7 @@
 # directive_example.py
 import hug
 
+
 # Header Directive
 @hug.directive()
 def foobar_header(**kwargs):
@@ -8,6 +9,7 @@ def foobar_header(**kwargs):
         'Content-Type': 'application/json'
     }
     return header
+
 
 # The Endpoint that uses the directive
 @hug.get("/data")
