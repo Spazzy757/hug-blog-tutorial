@@ -12,7 +12,5 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
-      - run:
-          command:
             flake8 hello_world.py directive_example.py
             python test.py
